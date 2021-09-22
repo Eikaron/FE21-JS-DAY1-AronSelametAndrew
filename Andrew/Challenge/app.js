@@ -19,4 +19,4 @@ let newSentence = sentence.split('$').join(" ");
 console.log(newSentence);
 
 
-document.getElementById('ch1').innerHTML = newSentence;
+document.getElementById('ch2').innerHTML = newSentence;
