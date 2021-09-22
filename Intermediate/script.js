@@ -17,9 +17,14 @@ animals.sort();
 
 var morefruit = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon"
 
-var temp = morefruit.split("/")
+
+//method 1
+//document.write(morefruit.split("/").join(" "));
+
+//method 2
+var temp= morefruit.split("/");
 
 for (let i = 0; i < temp.length; i++) {
-    document.write(temp[i]+"\n")
+    document.write(temp[i])
 }
-//newline doesn‘t work in the browser like that
+
