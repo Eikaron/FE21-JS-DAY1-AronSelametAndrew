@@ -12,6 +12,10 @@ document.querySelector('#extra1').innerHTML = newSentence.join(" ");
 let fruit = ['apple', 'banana', 'kiwi'];
 fruit.splice(1, 0, 'orange', 'strawberry');
 console.log(fruit);
-// console.log(fruit.splice(1, 0, 'orange', 'strawberry'));
-fruit.join(" ");
-document.getElementById('ex2').innerHTML = fruit;
+// DOM version
+document.getElementById('ex2').innerHTML = fruit.join(" "); // This works better but not sure why
+
+// Questions
+console.log(fruit.splice(1, 0, 'orange', 'strawberry')); // EMPTY! Does console.log method not accept a method?
+console.log(fruit.pop()); // Here it does what we expect
+
