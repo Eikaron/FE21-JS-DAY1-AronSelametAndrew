@@ -22,18 +22,13 @@ console.log(animalSort);
 const lasFruitas = 'mango/cherries/kiwi/grapes/pear/peach/orange/lemon';
 let temp = new Array();  // N.B Cannot use const here must use let (or var)
 temp = lasFruitas.split('/');
+console.log(temp.join(", \n"));
+
 console.log(temp);
 for (index in temp) {
     console.log(temp[index]);
 }
 
-document.getElementById('fruit').innerHTML = temp.join(", ");
-document.getElementById('fruit2').innerHTML =
-    temp[0] + ",<br>" +
-    temp[1] + ",<br>" +
-    temp[2] + ",<br>" +
-    temp[3] + ",<br>" +
-    temp[4] + ",<br>" +
-    temp[5] + ",<br>" +
-    temp[6] + ",<br>" +
-    temp[7] + ".<br>";
+document.write(temp.join(", <br>"));
+
+document.getElementById('fruit').innerHTML = temp.join(", <br>");

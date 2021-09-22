@@ -6,6 +6,7 @@ newSentence.push('developer.');
 console.log(newSentence);
 console.log(newSentence.join(" "));
 
+// DOM version
 document.querySelector('#extra1').innerHTML = newSentence.join(" ");
 
 //  Extra Ex2
@@ -16,6 +17,7 @@ console.log(fruit);
 document.getElementById('ex2').innerHTML = fruit.join(" "); // This works better but not sure why
 
 // Questions
-console.log(fruit.splice(1, 0, 'orange', 'strawberry')); // EMPTY! Does console.log method not accept a method?
+console.log(fruit.join(", "));
+console.log(fruit.splice(1, 0, 'orange', 'strawberry')); // EMPTY! splice stores no value unlike pop(), join()
 console.log(fruit.pop()); // Here it does what we expect
 
